@@ -1,3 +1,4 @@
+import BreakingNews from "../BreakingNews";
 import Header from "../Shared/Header/Header";
 import LeftSideBar from "../Shared/LeftSideBar/LeftSideBar";
 import NavBar from "../Shared/NavBar/NavBar";
@@ -8,6 +9,7 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
+      <BreakingNews></BreakingNews>
       <NavBar></NavBar>
       <div className="grid md:grid-cols-4 gap-6">
         <div className="border">
@@ -16,7 +18,7 @@ const Home = () => {
         <div className="md:col-span-2 border">
           <h2 className="text-4xl">content cooming soon</h2>
         </div>
-        <div className="border">
+        <div>
           <RigthSideBar></RigthSideBar>
         </div>
       </div>
